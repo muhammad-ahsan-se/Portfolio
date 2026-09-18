@@ -1,0 +1,54 @@
+
+/* Premium Black + Deep Purple/Blue theme */
+:root {
+  --bg: #070711;
+  --bg-soft: #0d0d1b;
+  --card: rgba(18, 18, 34, .72);
+  --border: rgba(139, 92, 246, .24);
+  --primary: #8b5cf6;
+  --secondary: #60a5fa;
+  --text: #f5f3ff;
+  --muted: #aaa7bd;
+  --shadow: 0 24px 70px rgba(0,0,0,.42);
+}
+
+body {
+  background:
+    radial-gradient(circle at 15% 15%, rgba(139,92,246,.13), transparent 30%),
+    radial-gradient(circle at 85% 25%, rgba(96,165,250,.10), transparent 28%),
+    var(--bg);
+  color: var(--text);
+}
+
+.premium-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease;
+}
+
+.premium-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(139,92,246,.55);
+  box-shadow: 0 28px 80px rgba(75, 45, 150, .22);
+}
+
+.premium-gradient-text {
+  background: linear-gradient(90deg, #f5f3ff, #a78bfa, #93c5fd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.certificate-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  border: 1px solid rgba(139,92,246,.35);
+  background: rgba(139,92,246,.10);
+  border-radius: 999px;
+  padding: .4rem .75rem;
+  color: #c4b5fd;
+}
